@@ -1,42 +1,45 @@
-# ¡Hola, soy Angel Alferez Castro! 👋
+# Ángel Alférez Castro
 
-Bienvenido a mi perfil. Soy **Angel Alferez Castro** (alias **alcaan16**), un apasionado del desarrollo de software enfocado en crear soluciones innovadoras, tanto en el ámbito backend como frontend.
+**SAP Developer** · ABAP Cloud · CAP · Integration Suite
+3× SAP Certified Associate (2026)
 
----
+Desarrollo sobre las tres capas de una extensión de S/4HANA: qué vive dentro del core, qué vive
+fuera y cómo se hablan las dos partes.
 
-## Sobre Mí
+Antes de escribir código SAP pasé ocho años en una planta cárnica gestionando recepción, lotes,
+caducidades y trazabilidad, y participé durante dos años en la implantación del ERP de la fábrica
+formando a 40–50 operarios de planta. Cuando un requerimiento habla de entradas de mercancía o de
+diferencias de inventario, no necesito que me lo traduzcan.
 
-Cuento con formación técnica, habiendo realizado un ciclo superior en **Administración de Sistemas Informáticos**, lo que me ha permitido combinar mis conocimientos en infraestructura con mis habilidades de programación. Siempre estoy en búsqueda de nuevos desafíos y oportunidades para crecer profesionalmente.
+## Certificaciones
 
----
+- **SAP Certified Associate — Back-End Developer, ABAP Cloud** (C_ABAPD)
+- **SAP Certified Associate — Backend Developer, SAP Cloud Application Programming Model** (C_CPE)
+- **SAP Certified Associate — Integration Developer** (C_CPI)
 
-## Tecnologías y Herramientas
+Formación oficial: 270 h en Experis Academy (ABAP Cloud 205 h + SAP BTP 65 h).
 
-### Backend
-- **Python**: Lenguaje principal en mi trabajo.
-- **FastAPI**: Framework que utilizo para crear APIs eficientes y robustas.
+## Stack
 
-### Frontend
-- **HTML**: Estructura básica para la web.
-- **CSS**: Para estilizar y crear diseños agradables.
-- **JavaScript**: Capaz de darle dinamismo e interactividad a mis proyectos.
+**SAP** · ABAP Cloud · RAP (behavior definitions, proyecciones, servicios OData V4) · CDS view
+entities · ABAP SQL · OO ABAP · Clean Core · SAP BTP ABAP Environment · CAP · SAP Integration Suite
 
-### Control de Versiones
-- **Git** y **GitHub**: Herramientas esenciales para el manejo y seguimiento de mis proyectos.
+**Web** · Node.js · Express · TypeScript · React · Astro · Python · MongoDB · Docker · Git
 
----
+**Entornos** · Eclipse ADT · SAP Business Application Studio · VS Code
+
+## Proyectos
+
+- **[canister-api](https://github.com/alcaan16/canister-api)** — API REST en Node.js + Express con
+  arquitectura MVC, filtrado y paginación.
+- **[mundoacuatico](https://github.com/alcaan16/mundoacuatico)** — SPA en React 19 que consume esa
+  API: estado global con Zustand, rutas protegidas, carga diferida.
+- **[PokeApi](https://github.com/alcaan16/PokeApi)** — sitio en Astro + TypeScript, en producción en
+  [alcaan16.es](https://alcaan16.es).
+
+🚧 **En construcción:** entrada de mercancía con gestión de lote y doble unidad de medida, en RAP
+sobre SAP BTP ABAP Environment.
 
 ## Contacto
 
-Si deseas colaborar en algún proyecto o simplemente intercambiar ideas, no dudes en escribirme a:  
-[alcaan16dev@gmail.com](mailto:alcaan16dev@gmail.com)
-
-También puedes seguir mis proyectos y estar al tanto de mis avances visitando mi perfil en [GitHub](https://github.com/alcaan16).
-
----
-
-## Mis Estadísticas en GitHub
-
-¡Conoce un poco más sobre mi actividad en GitHub!
-
-![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=alcaan16&show_icons=true&theme=radical)
+📧 angelalferezcastro@gmail.com · 💼 [linkedin.com/in/alcaan-dev](https://linkedin.com/in/alcaan-dev)
