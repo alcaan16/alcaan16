@@ -1,36 +1,39 @@
 <div align="center">
-  
+
 # Ángel Alférez Castro
- 
-### SAP Developer · ABAP Cloud · CAP · Integration Suite
- 
+
+### SAP ABAP Developer · Consultor Técnico SAP
+
+**ABAP Cloud · S/4HANA · SAP BTP · Integration Suite · CAP**
+
 [![SAP Certified](https://img.shields.io/badge/SAP%20Certified-ABAP%20Cloud-0FAAFF?style=for-the-badge&logo=sap&logoColor=white)](https://github.com/alcaan16)
 [![SAP Certified](https://img.shields.io/badge/SAP%20Certified-CAP-0FAAFF?style=for-the-badge&logo=sap&logoColor=white)](https://github.com/alcaan16)
 [![SAP Certified](https://img.shields.io/badge/SAP%20Certified-Integration%20Suite-0FAAFF?style=for-the-badge&logo=sap&logoColor=white)](https://github.com/alcaan16)
- 
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-alcaan--dev-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/alcaan-dev)
 [![Email](https://img.shields.io/badge/Email-angelalferezcastro%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:angelalferezcastro@gmail.com)
 [![Web](https://img.shields.io/badge/Web-alcaan16.es-1F2937?style=flat-square&logo=astro&logoColor=white)](https://alcaan16.es)
- 
+
 **Las tres capas de una extensión de S/4HANA:**
 qué vive dentro del core, qué vive fuera y cómo se hablan las dos partes.
- 
+
 </div>
+
 ---
- 
+
 Antes de escribir código SAP pasé **ocho años en una planta cárnica** gestionando recepción, lotes,
 caducidades y trazabilidad, y participé durante dos años en la implantación del ERP de la fábrica
 formando a 40–50 operarios de planta.
- 
+
 Cuando un requerimiento habla de entradas de mercancía o de diferencias de inventario, no necesito
 que me lo traduzcan.
- 
+
 ---
- 
+
 ## 🏭 Proyecto destacado
- 
+
 ### [`zgr-goods-receipt`](https://github.com/alcaan16/zgr-goods-receipt) · Entrada de mercancía con gestión de lote y doble unidad de medida
- 
+
 ![ABAP Cloud](https://img.shields.io/badge/ABAP%20Cloud-0FAAFF?style=flat-square&logo=sap&logoColor=white)
 ![RAP](https://img.shields.io/badge/RAP%20managed%20%2B%20draft-0FAAFF?style=flat-square)
 ![CDS](https://img.shields.io/badge/CDS%20view%20entities-0FAAFF?style=flat-square)
@@ -38,21 +41,21 @@ que me lo traduzcan.
 ![ABAP Unit](https://img.shields.io/badge/ABAP%20Unit-32%20tests-16A34A?style=flat-square)
 ![ATC](https://img.shields.io/badge/ATC-0%20errores%20%C2%B7%200%20avisos-16A34A?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-6B7280?style=flat-square)
- 
+
 Business object **RAP managed con draft** sobre un árbol de composición de tres niveles
 —entrada → posición → lote— con **6 determinations, 7 validations y 4 acciones** con feature control
 por instancia, expuesto como servicio **OData V4**.
- 
+
 La lógica de negocio vive en **clases ABAP independientes** de la implementación del comportamiento,
 con **32 tests de ABAP Unit**. Sobrevivieron sin una línea de cambio a dos refactorizaciones del
 modelo de datos — el historial de commits lo enseña.
- 
+
 > **Las reglas que lo separan de un tutorial salen de haber estado delante de la báscula.**
 > Plausibilidad del peso medio por pieza: 500 pollos y 6.500 kg no son una desviación, son un error
 > de conteo o de báscula. Vida útil restante mínima: el producto que no está caducado pero ya no
 > sirve. Y una aceptación de desviación que registra **quién y por qué** en lugar de sobrescribir el
 > peso recibido, porque de ahí salen las reclamaciones al proveedor.
- 
+
 <table>
 <tr>
 <td width="50%"><img src="https://raw.githubusercontent.com/alcaan16/zgr-goods-receipt/main/docs/img/02-validacion-peso-medio.png" alt="Validación de plausibilidad del peso medio por pieza"></td>
@@ -63,27 +66,28 @@ modelo de datos — el historial de commits lo enseña.
 <td align="center"><sub><b>32 tests de ABAP Unit</b></sub></td>
 </tr>
 </table>
+
 El README del repositorio incluye un apartado explícito de **qué no está implementado**, y un
 documento de decisiones técnicas con las alternativas descartadas y el motivo de cada una.
- 
+
 ---
- 
+
 ## 🌐 Base fullstack
- 
+
 La capa sobre la que se apoya el modelo de programación de CAP.
- 
+
 | Proyecto | Qué es | Stack |
 |---|---|---|
 | **[canister-api](https://github.com/alcaan16/canister-api)** | API REST con arquitectura MVC, filtrado y paginación | ![Node](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white) ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
 | **[mundoacuatico](https://github.com/alcaan16/mundoacuatico)** | SPA que consume esa API: estado global, rutas protegidas, carga diferida | ![React](https://img.shields.io/badge/-React%2019-61DAFB?style=flat-square&logo=react&logoColor=black) ![Zustand](https://img.shields.io/badge/-Zustand-433E38?style=flat-square) |
 | **[PokeApi](https://github.com/alcaan16/PokeApi)** | Sitio en producción en [alcaan16.es](https://alcaan16.es) | ![Astro](https://img.shields.io/badge/-Astro-BC52EE?style=flat-square&logo=astro&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
- 
+
 ---
- 
+
 ## 🧰 Stack
- 
+
 **SAP**
- 
+
 ![ABAP Cloud](https://img.shields.io/badge/-ABAP%20Cloud-0FAAFF?style=flat-square&logo=sap&logoColor=white)
 ![RAP](https://img.shields.io/badge/-RAP-0FAAFF?style=flat-square)
 ![CDS](https://img.shields.io/badge/-CDS%20view%20entities-0FAAFF?style=flat-square)
@@ -95,9 +99,9 @@ La capa sobre la que se apoya el modelo de programación de CAP.
 ![BTP ABAP Environment](https://img.shields.io/badge/-BTP%20ABAP%20Environment-0FAAFF?style=flat-square)
 ![CAP](https://img.shields.io/badge/-CAP-0FAAFF?style=flat-square)
 ![Integration Suite](https://img.shields.io/badge/-Integration%20Suite-0FAAFF?style=flat-square)
- 
+
 **Web**
- 
+
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -107,41 +111,32 @@ La capa sobre la que se apoya el modelo de programación de CAP.
 ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
- 
+
 **Entornos**
- 
+
 ![Eclipse ADT](https://img.shields.io/badge/-Eclipse%20ADT-2C2255?style=flat-square&logo=eclipseide&logoColor=white)
 ![SAP BAS](https://img.shields.io/badge/-SAP%20Business%20Application%20Studio-0FAAFF?style=flat-square&logo=sap&logoColor=white)
 ![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 ![abapGit](https://img.shields.io/badge/-abapGit-6B7280?style=flat-square&logo=git&logoColor=white)
- 
+
 ---
- 
+
 ## 🎓 Certificaciones
- 
+
 | Credencial | Código |
 |---|---|
 | SAP Certified Associate — Back-End Developer, ABAP Cloud | `C_ABAPD` |
 | SAP Certified Associate — Backend Developer, SAP Cloud Application Programming Model | `C_CPE` |
 | SAP Certified Associate — Integration Developer | `C_CPI` |
- 
+
 Formación oficial: **270 h** en Experis Academy — ABAP Cloud 205 h + SAP BTP 65 h.
- 
+
 ---
- 
+
 <div align="center">
-  
+
 📧 **angelalferezcastro@gmail.com** · 💼 **[linkedin.com/in/alcaan-dev](https://linkedin.com/in/alcaan-dev)** · 🌐 **[alcaan16.es](https://alcaan16.es)**
- 
-<sub>Abierto a incorporación en plantilla como SAP Developer — remoto en Andalucía o presencial en Córdoba / Sevilla.</sub>
- 
+
+<sub>Abierto a incorporación en plantilla como SAP ABAP Developer — remoto en Andalucía o presencial en Córdoba / Sevilla.</sub>
+
 </div>
- 
-
-
-
-
-
-
-
-
