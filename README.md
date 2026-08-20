@@ -30,7 +30,7 @@ que me lo traduzcan.
 
 ---
 
-## 🏭 Proyecto destacado
+## 🏭 Proyectos destacados
 
 ### [`zgr-goods-receipt`](https://github.com/alcaan16/zgr-goods-receipt) · Entrada de mercancía con gestión de lote y doble unidad de medida
 
@@ -69,6 +69,28 @@ modelo de datos — el historial de commits lo enseña.
 
 El README del repositorio incluye un apartado explícito de **qué no está implementado**, y un
 documento de decisiones técnicas con las alternativas descartadas y el motivo de cada una.
+
+---
+### [`cap-lot-traceability`](https://github.com/alcaan16/cap-lot-traceability) · Trazabilidad de lote de proveedor a producto terminado
+
+![CAP](https://img.shields.io/badge/CAP-0FAAFF?style=flat-square&logo=sap&logoColor=white)
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![OData V4](https://img.shields.io/badge/OData%20V4-0FAAFF?style=flat-square)
+![FEFO](https://img.shields.io/badge/Consumo-FEFO-16A34A?style=flat-square)
+
+Modelo CAP que encadena **lote de proveedor → lote interno → producto terminado**, con consumo
+automático por fecha de caducidad (FEFO): cuando el lote que antes caduca no basta, reparte la
+producción entre varios y deja el rastro completo de cuál salió de dónde.
+
+> **Lo que separa esto de un ejercicio de CAP genérico:** de los 4 productos del catálogo de ejemplo,
+> solo el que caduca de verdad —aceite de oliva— recibió lotes con fecha de caducidad. Un palet o un
+> escáner de códigos de barras no la necesitan, y el modelo no se la fuerza.
+
+![Modelo de datos](https://raw.githubusercontent.com/alcaan16/cap-lot-traceability/main/docs/modelo-datos-trazabilidad.svg)
+
+El README del repositorio documenta la decisión de desarrollo 100% local (`cds watch` + SQLite) sin
+disfrazarla de despliegue, con datos de ejemplo listos para reproducir el caso FEFO sin preparar nada
+a mano.
 
 ---
 
