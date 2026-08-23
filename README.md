@@ -71,6 +71,7 @@ El README del repositorio incluye un apartado explícito de **qué no está impl
 documento de decisiones técnicas con las alternativas descartadas y el motivo de cada una.
 
 ---
+
 ### [`cap-lot-traceability`](https://github.com/alcaan16/cap-lot-traceability) · Trazabilidad de lote de proveedor a producto terminado
 
 ![CAP](https://img.shields.io/badge/CAP-0FAAFF?style=flat-square&logo=sap&logoColor=white)
@@ -91,6 +92,41 @@ producción entre varios y deja el rastro completo de cuál salió de dónde.
 El README del repositorio documenta la decisión de desarrollo 100% local (`cds watch` + SQLite) sin
 disfrazarla de despliegue, con datos de ejemplo listos para reproducir el caso FEFO sin preparar nada
 a mano.
+
+---
+
+### [`cpi-expiry-alerts`](https://github.com/alcaan16/cpi-expiry-alerts) · Alertas de caducidad desde recepción de mercancía
+
+![Integration Suite](https://img.shields.io/badge/Integration%20Suite-0FAAFF?style=flat-square&logo=sap&logoColor=white)
+![iFlow](https://img.shields.io/badge/iFlow-0FAAFF?style=flat-square)
+![Groovy](https://img.shields.io/badge/Groovy-0FAAFF?style=flat-square&logo=apachegroovy&logoColor=white)
+![Fallo real](https://img.shields.io/badge/Fallo%20real-capturado-16A34A?style=flat-square)
+![Entrega](https://img.shields.io/badge/Entrega-end--to--end%20real-16A34A?style=flat-square)
+
+iFlow en **SAP Integration Suite** que conecta la recepción de mercancía de `zgr-goods-receipt` con
+una aplicación externa de alertas de vida útil: filtra entidades en borrador de un payload real
+capturado de la API, aplana la jerarquía Receipt → Item → Batch y entrega por **HTTPS**, con una
+**Exception Subprocess** que captura cualquier fallo de entrega en vez de dejarlo sin resolver.
+
+> **Lo que separa esto de un tutorial de Integration Suite:** la Exception Subprocess no se dio por
+> buena en el diseño. Se probó deteniendo la aplicación externa a mitad de una ejecución real — la
+> llamada HTTP falló, la ejecución saltó a la rama de captura de errores, y el mensaje completo
+> terminó marcado como **Completed**, no como Failed.
+
+<table>
+<tr>
+<td width="50%"><img src="https://raw.githubusercontent.com/alcaan16/cpi-expiry-alerts/main/docs/04a-fallo-capturado.png" alt="Run Steps con el fallo capturado por la Exception Subprocess"></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/alcaan16/cpi-expiry-alerts/main/docs/04b-mensaje-completed.png" alt="Mensaje marcado como Completed pese al fallo interno"></td>
+</tr>
+<tr>
+<td align="center"><sub><b>El fallo real, absorbido paso a paso</b></sub></td>
+<td align="center"><sub><b>El resultado: Completed, no Failed</b></sub></td>
+</tr>
+</table>
+
+El README del repositorio documenta por qué el origen es un payload de muestra y no un sondeo en
+vivo —restricciones de acceso de un tenant compartido, no una limitación oculta— y cómo se expone la
+aplicación externa con un túnel real.
 
 ---
 
