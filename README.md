@@ -138,7 +138,7 @@ La capa sobre la que se apoya el modelo de programación de CAP.
 |---|---|---|
 | **[canister-api](https://github.com/alcaan16/canister-api)** | API REST con arquitectura MVC, filtrado y paginación | ![Node](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white) ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
 | **[mundoacuatico](https://github.com/alcaan16/mundoacuatico)** | SPA que consume esa API: estado global, rutas protegidas, carga diferida | ![React](https://img.shields.io/badge/-React%2019-61DAFB?style=flat-square&logo=react&logoColor=black) ![Zustand](https://img.shields.io/badge/-Zustand-433E38?style=flat-square) |
-| **[PokeApi](https://github.com/alcaan16/PokeApi)** | Sitio en producción en [alcaan16.es](https://alcaan16.es) | ![Astro](https://img.shields.io/badge/-Astro-BC52EE?style=flat-square&logo=astro&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| **[PokeApi](https://github.com/alcaan16/PokeApi)** | Sitio estático generado en build sobre una API pública, con rutas por entidad — en producción en [pokedex-alcaan16.netlify.app](https://pokedex-alcaan16.netlify.app) | ![Astro](https://img.shields.io/badge/-Astro-BC52EE?style=flat-square&logo=astro&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 
 ---
 
